@@ -62,7 +62,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":22,
          "x":0,
          "y":0
@@ -118,7 +118,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/confluence.signavio.com\/x\/KodNB"
+                 "value":"https:\/\/www.google.de"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -491,8 +491,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":48,
- "nextobjectid":33,
+ "nextlayerid":49,
+ "nextobjectid":34,
  "orientation":"orthogonal",
  "properties":[
         {
