@@ -22,7 +22,6 @@ function closePopUp(){
     }
 }
 
-
 // Testnew popup
 let helloWorldPopup;
 
@@ -40,5 +39,5 @@ helloWorldPopup = WA.room.onEnterLayer("WelcomeMessagePopup").subscribe(() => {
 
 // Close the popup when we leave the zone.
 WA.room.onLeaveLayer("WelcomeMessage").subscribe(() => {
-    helloWorldPopup.close();
+    helloWorldPopup.close(); 
 })
