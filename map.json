@@ -119,6 +119,12 @@
          "id":49,
          "name":"WelcomeMessagePopup",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"WelcomeMessagePopup"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":22,
