@@ -6,11 +6,14 @@ import {bootstrapExtra} from "@workadventure/scripting-api-extra";
 bootstrapExtra().catch(e => console.error(e));
 
 // Pat´s Test
+// AUSGEBLENDET BY PAT
+/*
 // Testnew popup
 let helloWorldPopup;
 
 // Open the popup when we enter a given zone
-helloWorldPopup = WA.room.onEnterLayer("WelcomeMessagePopup").subscribe(() => {
+
+/* helloWorldPopup = WA.room.onEnterLayer("WelcomeMessagePopup").subscribe(() => {
     WA.ui.openPopup("WelcomeMessage", 'Welcome to our new Common Area!', [{
         label: "Close",
         className: "primary",
@@ -25,6 +28,8 @@ helloWorldPopup = WA.room.onEnterLayer("WelcomeMessagePopup").subscribe(() => {
 WA.room.onLeaveLayer("WelcomeMessage").subscribe(() => {
     helloWorldPopup.close();
 })
+*/
+// Ab hier der orignale Teil
 
 // Original unterhalb
 let currentPopup: any = undefined;
