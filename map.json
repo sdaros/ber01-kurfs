@@ -594,11 +594,11 @@
         {
          "columns":10,
          "firstgid":1,
-         "image":"src\/assets\/tileset5_export.png",
+         "image":"src\/assets\/3110_room-builder.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
-         "name":"tileset5_export",
+         "name":"3110_room-builder",
          "properties":[
                 {
                  "name":"tilesetCopyright",
@@ -857,11 +857,11 @@
         {
          "columns":10,
          "firstgid":101,
-         "image":"src\/assets\/tileset6_export.png",
+         "image":"src\/assets\/9100_assorted.png",
          "imageheight":320,
          "imagewidth":320,
          "margin":0,
-         "name":"tileset6_export",
+         "name":"9100_assorted",
          "properties":[
                 {
                  "name":"tilesetCopyright",
@@ -876,11 +876,11 @@
         {
          "columns":11,
          "firstgid":201,
-         "image":"src\/assets\/tileset1.png",
+         "image":"src\/assets\/3100_office.png",
          "imageheight":352,
          "imagewidth":352,
          "margin":0,
-         "name":"tileset1",
+         "name":"3100_office",
          "properties":[
                 {
                  "name":"tilesetCopyright",
@@ -895,11 +895,11 @@
         {
          "columns":11,
          "firstgid":322,
-         "image":"src\/assets\/tileset1-repositioning.png",
+         "image":"src\/assets\/3101_office-repositioned.png",
          "imageheight":352,
          "imagewidth":352,
          "margin":0,
-         "name":"tileset1-repositioning",
+         "name":"3101_office-repositioned",
          "properties":[
                 {
                  "name":"tilesetCopyright",
@@ -942,11 +942,11 @@
         {
          "columns":6,
          "firstgid":443,
-         "image":"src\/assets\/Special_Zones.png",
+         "image":"src\/assets\/3000_special-zones.png",
          "imageheight":64,
          "imagewidth":192,
          "margin":0,
-         "name":"Special_Zones",
+         "name":"3000_special-zones",
          "properties":[
                 {
                  "name":"tilesetCopyright",
