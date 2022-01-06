@@ -32,7 +32,7 @@ bootstrapExtra().catch(e => console.error(e));
 
 // Original unterhalb
 let currentPopup: any = undefined;
-let helloWorldPopup;
+let helloWorldPopup: string;
 const today = new Date();
 const time = today.getHours() + ":" + today.getMinutes();
 
