@@ -15,12 +15,19 @@ WA.room.onEnterZone('clock', () => {
 WA.room.onLeaveZone('clock', closePopUp);
 
 WA.room.onEnterZone('WelcomeMessagePopup', () => {
-    helloWorldPopup =  WA.ui.openPopup("WelcomeMessage","Welcome to our new Common Area!",[]);
+    currentPopup =  WA.ui.openPopup("WelcomeMessage","Welcome to our new Common Area!",[{
+        label: "Close",
+        className: "normal",
+        callback: (popup) => {
+            popup.close();
+        }
+    }]);
 })
 WA.room.onLeaveZone('WelcomeMessagePopup', closePopUp);
 
 function closePopUp(){
     if (currentPopup !== undefined) {
+        // Close the popup when the "Close" button is pressed
         currentPopup.close();
         currentPopup = undefined;
     }
