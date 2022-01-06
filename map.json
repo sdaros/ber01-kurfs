@@ -967,6 +967,19 @@
                         }]
                 }],
          "tilewidth":32
+        }, 
+        {
+         "columns":75,
+         "firstgid":455,
+         "image":"src\/assets\/3120_room-builder.png",
+         "imageheight":2144,
+         "imagewidth":2400,
+         "margin":0,
+         "name":"3120_room-builder",
+         "spacing":0,
+         "tilecount":5025,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
