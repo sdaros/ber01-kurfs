@@ -9,7 +9,7 @@ bootstrapExtra().catch(e => console.error(e));
 // AUSGEBLENDET BY PAT
 /*
 // Testnew popup
-let helloWorldPopup;
+
 
 // Open the popup when we enter a given zone
 
@@ -25,14 +25,14 @@ let helloWorldPopup;
 });
 
 // Close the popup when we leave the zone.
-WA.room.onLeaveLayer("WelcomeMessage").subscribe(() => {
-    helloWorldPopup.close();
-})
+
+
 */
 // Ab hier der orignale Teil
 
 // Original unterhalb
 let currentPopup: any = undefined;
+let helloWorldPopup: any = undefined;
 const today = new Date();
 const time = today.getHours() + ":" + today.getMinutes();
 
@@ -40,7 +40,13 @@ WA.room.onEnterZone('clock', () => {
     currentPopup =  WA.ui.openPopup("clockPopup","It's " + time,[]);
 })
 
-WA.room.onLeaveZone('clock', closePopUp)
+WA.room.onLeaveZone('clock', closePopUp);
+
+WA.room.onEnterZone('WelcomeMessagePopup', () => {
+    helloWorldPopup =  WA.ui.openPopup("WelcomeMessage","Welcome to our new Common Area!",[]);
+})
+
+WA.room.onLeaveZone('WelcomeMessagePopup', closePopUp);
 
 function closePopUp(){
     if (currentPopup !== undefined) {
