@@ -108,7 +108,7 @@
                  "value":"onaction"
                 }],
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":22,
          "x":0,
          "y":0
