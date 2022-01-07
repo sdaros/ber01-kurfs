@@ -25,6 +25,18 @@ WA.room.onEnterZone('WelcomeMessagePopup', () => {
 })
 WA.room.onLeaveZone('WelcomeMessagePopup', closePopUp);
 
+WA.room.onEnterZone('OwlyBase', () => {
+    currentPopup =  WA.ui.openPopup("owlyBasePopup","OwlyBase is just one click away",[{
+        label: "Open Owly Base",
+        className: "normal",
+        callback: () => {
+            WA.nav.openTab('https://confluence.signavio.com/x/KodNB')
+        }
+    }]);
+})
+WA.room.onLeaveZone('OwlyBase', closePopUp);
+
+
 function closePopUp(){
     if (currentPopup !== undefined) {
         // Close the popup when the "Close" button is pressed
