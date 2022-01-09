@@ -14,27 +14,14 @@ async function extendedFeatures() {
 extendedFeatures();
 
 
-const today = new Date();
-const time = today.getHours() + ":" + today.getMinutes();
 // Manage popups
 let currentZone: string;
 let currentPopup: any;
 const config = [
     {
-        zone: 'clock',
-        message: "It's " + time,
-        cta: []
-    },
-    {
         zone: 'loungeEntrance',
-        message: 'Welcome to our our new Office, BER01, perhaps it looks familiar to you.',
-        cta: [
-            {
-                label: 'Close',
-                className: 'normal',
-                callback: (popup: any) => popup.close,
-            },
-        ]
+        message: 'Welcome to our new office, BER01!',
+        cta: [],
     },
     {
         zone: 'owlyBase',
@@ -48,7 +35,11 @@ const config = [
         ]
     }
 ];
-WA.room.onEnterZone('clock', () => openPopup('clock'));
+WA.room.onEnterZone('clock', () => {
+    const today = new Date();
+    const time = today.getHours() + ":" + today.getMinutes();
+    currentPopup = WA.ui.openPopup('clockPopup', "It's " + time, []);
+});
 WA.room.onLeaveZone('clock', closePopup);
 
 WA.room.onEnterZone('loungeEntrance', () => openPopup('loungeEntrance'));
@@ -56,7 +47,6 @@ WA.room.onLeaveZone('loungeEntrance', closePopup);
 
 WA.room.onEnterZone('owlyBase', () => openPopup('owlyBase'));
 WA.room.onLeaveZone('owlyBase', closePopup);
-WA.room.onLeaveZone('OwlyBase', closePopup);
 
 // Popup management functions
 function openPopup(zoneName: string) {
@@ -65,7 +55,6 @@ function openPopup(zoneName: string) {
     const zone = config.find((item) => {
         return item.zone == zoneName
     });
-
     if (typeof zone !== 'undefined') {
         // @ts-ignore otherwise we can't use zone.cta object
         currentPopup = WA.ui.openPopup(popupName, zone.message, zone.cta)
