@@ -60,7 +60,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"https:\/\/play.workadventu.re\/@\/sap\/ber01\/keithstrasse"
+                 "value":"https:\/\/play.workadventu.re\/@\/sap\/ber01\/keith"
                 }],
          "type":"tilelayer",
          "visible":true,
